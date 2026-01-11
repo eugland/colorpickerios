@@ -16,13 +16,31 @@ struct InfoDetailView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: 18) {
                 if let content {
-                    Text(content.title)
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                    Text(content.body)
-                        .foregroundStyle(.secondary)
+                    ForEach(Array(content.sections.enumerated()), id: \.offset) { _, section in
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text(section.heading)
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                            ForEach(section.paragraphs, id: \.self) { paragraph in
+                                Text(paragraph)
+                                    .foregroundStyle(.secondary)
+                            }
+                            if !section.bullets.isEmpty {
+                                VStack(alignment: .leading, spacing: 6) {
+                                    ForEach(section.bullets, id: \.self) { bullet in
+                                        Text("• \(bullet)")
+                                            .foregroundStyle(.secondary)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if content.sections.isEmpty {
+                        Text("No content available for this page yet.")
+                            .foregroundStyle(.secondary)
+                    }
                 } else if isLoading {
                     ProgressView()
                         .frame(maxWidth: .infinity, alignment: .center)
@@ -34,9 +52,22 @@ struct InfoDetailView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
         }
-        .navigationTitle(content?.title ?? "Info")
+        .navigationTitle(content?.title ?? pageTitle)
         .task(id: "\(page)-\(settingsStore.languageTag)") {
             await loadContent()
+        }
+    }
+
+    private var pageTitle: String {
+        switch page {
+        case "privacy":
+            return "Privacy Statement"
+        case "usage":
+            return "Usage Guide"
+        case "copyright":
+            return "Copyright Notice"
+        default:
+            return "Info"
         }
     }
 

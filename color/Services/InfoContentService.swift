@@ -9,8 +9,14 @@ import Foundation
 
 final class InfoContentService {
     struct InfoContent: Codable {
-        let title: String
-        let body: String
+        let title: String?
+        let sections: [Section]
+    }
+
+    struct Section: Codable {
+        let heading: String
+        let paragraphs: [String]
+        let bullets: [String]
     }
 
     private let cacheDirectory: URL
@@ -54,9 +60,12 @@ final class InfoContentService {
             throw error
         }
         #if DEBUG
-        let bodyPreview = decoded.body.prefix(160)
-        print("InfoContentService response title: \(decoded.title)")
-        print("InfoContentService response body preview: \(bodyPreview)")
+        let titlePreview = decoded.title ?? "<none>"
+        let sectionCount = decoded.sections.count
+        let firstParagraph = decoded.sections.first?.paragraphs.first ?? ""
+        print("InfoContentService response title: \(titlePreview)")
+        print("InfoContentService response sections: \(sectionCount)")
+        print("InfoContentService response first paragraph preview: \(firstParagraph.prefix(160))")
         #endif
         return decoded
     }
