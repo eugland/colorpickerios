@@ -7,6 +7,168 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11A57D82F1377AC004EE344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B12F1377AC004EE344 /* AppDelegate.swift */; };
+		C11A57D92F1377AC004EE344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B12F1377AC004EE344 /* AppDelegate.swift */; };
+		C11A57DA2F1377AC004EE344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B12F1377AC004EE344 /* AppDelegate.swift */; };
+		C11A57DB2F1377AC004EE344 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B22F1377AC004EE344 /* AppServices.swift */; };
+		C11A57DC2F1377AC004EE344 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B22F1377AC004EE344 /* AppServices.swift */; };
+		C11A57DD2F1377AC004EE344 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B22F1377AC004EE344 /* AppServices.swift */; };
+		C11A57DE2F1377AC004EE344 /* CameraTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B42F1377AC004EE344 /* CameraTabView.swift */; };
+		C11A57DF2F1377AC004EE344 /* CameraTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B42F1377AC004EE344 /* CameraTabView.swift */; };
+		C11A57E02F1377AC004EE344 /* CameraTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B42F1377AC004EE344 /* CameraTabView.swift */; };
+		C11A57E12F1377AC004EE344 /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B52F1377AC004EE344 /* LiveCameraView.swift */; };
+		C11A57E22F1377AC004EE344 /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B52F1377AC004EE344 /* LiveCameraView.swift */; };
+		C11A57E32F1377AC004EE344 /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B52F1377AC004EE344 /* LiveCameraView.swift */; };
+		C11A57E42F1377AC004EE344 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B62F1377AC004EE344 /* PhotoPickView.swift */; };
+		C11A57E52F1377AC004EE344 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B62F1377AC004EE344 /* PhotoPickView.swift */; };
+		C11A57E62F1377AC004EE344 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B62F1377AC004EE344 /* PhotoPickView.swift */; };
+		C11A57E72F1377AC004EE344 /* ColorDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B82F1377AC004EE344 /* ColorDetailsView.swift */; };
+		C11A57E82F1377AC004EE344 /* ColorDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B82F1377AC004EE344 /* ColorDetailsView.swift */; };
+		C11A57E92F1377AC004EE344 /* ColorDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57B82F1377AC004EE344 /* ColorDetailsView.swift */; };
+		C11A57EA2F1377AC004EE344 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BA2F1377AC004EE344 /* ExploreView.swift */; };
+		C11A57EB2F1377AC004EE344 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BA2F1377AC004EE344 /* ExploreView.swift */; };
+		C11A57EC2F1377AC004EE344 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BA2F1377AC004EE344 /* ExploreView.swift */; };
+		C11A57ED2F1377AC004EE344 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BB2F1377AC004EE344 /* InfoDetailView.swift */; };
+		C11A57EE2F1377AC004EE344 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BB2F1377AC004EE344 /* InfoDetailView.swift */; };
+		C11A57EF2F1377AC004EE344 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BB2F1377AC004EE344 /* InfoDetailView.swift */; };
+		C11A57F02F1377AC004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */; };
+		C11A57F12F1377AC004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */; };
+		C11A57F22F1377AC004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */; };
+		C11A57F32F1377AC004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */; };
+		C11A57F42F1377AC004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */; };
+		C11A57F52F1377AC004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */; };
+		C11A57F62F1377AC004EE344 /* PaletteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BF2F1377AC004EE344 /* PaletteListView.swift */; };
+		C11A57F72F1377AC004EE344 /* PaletteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BF2F1377AC004EE344 /* PaletteListView.swift */; };
+		C11A57F82F1377AC004EE344 /* PaletteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BF2F1377AC004EE344 /* PaletteListView.swift */; };
+		C11A57F92F1377AC004EE344 /* ColorBlindEnhancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C12F1377AC004EE344 /* ColorBlindEnhancerView.swift */; };
+		C11A57FA2F1377AC004EE344 /* ColorBlindEnhancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C12F1377AC004EE344 /* ColorBlindEnhancerView.swift */; };
+		C11A57FB2F1377AC004EE344 /* ColorBlindEnhancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C12F1377AC004EE344 /* ColorBlindEnhancerView.swift */; };
+		C11A57FC2F1377AC004EE344 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C22F1377AC004EE344 /* ColorSliderView.swift */; };
+		C11A57FD2F1377AC004EE344 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C22F1377AC004EE344 /* ColorSliderView.swift */; };
+		C11A57FE2F1377AC004EE344 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C22F1377AC004EE344 /* ColorSliderView.swift */; };
+		C11A57FF2F1377AC004EE344 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C52F1377AC004EE344 /* Palette.swift */; };
+		C11A58002F1377AC004EE344 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C52F1377AC004EE344 /* Palette.swift */; };
+		C11A58012F1377AC004EE344 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C52F1377AC004EE344 /* Palette.swift */; };
+		C11A58022F1377AC004EE344 /* PickedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C62F1377AC004EE344 /* PickedColor.swift */; };
+		C11A58032F1377AC004EE344 /* PickedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C62F1377AC004EE344 /* PickedColor.swift */; };
+		C11A58042F1377AC004EE344 /* PickedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57C62F1377AC004EE344 /* PickedColor.swift */; };
+		C11A58052F1377AC004EE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57C82F1377AC004EE344 /* Preview Assets.xcassets */; };
+		C11A58062F1377AC004EE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57C82F1377AC004EE344 /* Preview Assets.xcassets */; };
+		C11A58072F1377AC004EE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57C82F1377AC004EE344 /* Preview Assets.xcassets */; };
+		C11A58082F1377AC004EE344 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = C11A57CA2F1377AC004EE344 /* colors.json */; };
+		C11A58092F1377AC004EE344 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = C11A57CA2F1377AC004EE344 /* colors.json */; };
+		C11A580A2F1377AC004EE344 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = C11A57CA2F1377AC004EE344 /* colors.json */; };
+		C11A580B2F1377AC004EE344 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CC2F1377AC004EE344 /* AnalyticsTracker.swift */; };
+		C11A580C2F1377AC004EE344 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CC2F1377AC004EE344 /* AnalyticsTracker.swift */; };
+		C11A580D2F1377AC004EE344 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CC2F1377AC004EE344 /* AnalyticsTracker.swift */; };
+		C11A580E2F1377AC004EE344 /* ColorDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CD2F1377AC004EE344 /* ColorDetailsService.swift */; };
+		C11A580F2F1377AC004EE344 /* ColorDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CD2F1377AC004EE344 /* ColorDetailsService.swift */; };
+		C11A58102F1377AC004EE344 /* ColorDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CD2F1377AC004EE344 /* ColorDetailsService.swift */; };
+		C11A58112F1377AC004EE344 /* ColorNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CE2F1377AC004EE344 /* ColorNameService.swift */; };
+		C11A58122F1377AC004EE344 /* ColorNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CE2F1377AC004EE344 /* ColorNameService.swift */; };
+		C11A58132F1377AC004EE344 /* ColorNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CE2F1377AC004EE344 /* ColorNameService.swift */; };
+		C11A58142F1377AC004EE344 /* InfoContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CF2F1377AC004EE344 /* InfoContentService.swift */; };
+		C11A58152F1377AC004EE344 /* InfoContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CF2F1377AC004EE344 /* InfoContentService.swift */; };
+		C11A58162F1377AC004EE344 /* InfoContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57CF2F1377AC004EE344 /* InfoContentService.swift */; };
+		C11A58172F1377AC004EE344 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D02F1377AC004EE344 /* PaletteStore.swift */; };
+		C11A58182F1377AC004EE344 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D02F1377AC004EE344 /* PaletteStore.swift */; };
+		C11A58192F1377AC004EE344 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D02F1377AC004EE344 /* PaletteStore.swift */; };
+		C11A581A2F1377AC004EE344 /* RecentPicksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D12F1377AC004EE344 /* RecentPicksStore.swift */; };
+		C11A581B2F1377AC004EE344 /* RecentPicksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D12F1377AC004EE344 /* RecentPicksStore.swift */; };
+		C11A581C2F1377AC004EE344 /* RecentPicksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D12F1377AC004EE344 /* RecentPicksStore.swift */; };
+		C11A581D2F1377AC004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D22F1377AC004EE344 /* SettingsStore.swift */; };
+		C11A581E2F1377AC004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D22F1377AC004EE344 /* SettingsStore.swift */; };
+		C11A581F2F1377AC004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D22F1377AC004EE344 /* SettingsStore.swift */; };
+		C11A58202F1377AC004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57D42F1377AC004EE344 /* Assets.xcassets */; };
+		C11A58212F1377AC004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57D42F1377AC004EE344 /* Assets.xcassets */; };
+		C11A58222F1377AC004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57D42F1377AC004EE344 /* Assets.xcassets */; };
+		C11A58232F1377AC004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D52F1377AC004EE344 /* colorApp.swift */; };
+		C11A58242F1377AC004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D52F1377AC004EE344 /* colorApp.swift */; };
+		C11A58252F1377AC004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D52F1377AC004EE344 /* colorApp.swift */; };
+		C11A58262F1377AC004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D62F1377AC004EE344 /* ContentView.swift */; };
+		C11A58272F1377AC004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D62F1377AC004EE344 /* ContentView.swift */; };
+		C11A58282F1377AC004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D62F1377AC004EE344 /* ContentView.swift */; };
+		C11A58502F138A94004EE344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58292F138A94004EE344 /* AppDelegate.swift */; };
+		C11A58512F138A94004EE344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58292F138A94004EE344 /* AppDelegate.swift */; };
+		C11A58522F138A94004EE344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58292F138A94004EE344 /* AppDelegate.swift */; };
+		C11A58532F138A94004EE344 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582A2F138A94004EE344 /* AppServices.swift */; };
+		C11A58542F138A94004EE344 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582A2F138A94004EE344 /* AppServices.swift */; };
+		C11A58552F138A94004EE344 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582A2F138A94004EE344 /* AppServices.swift */; };
+		C11A58562F138A94004EE344 /* CameraTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582C2F138A94004EE344 /* CameraTabView.swift */; };
+		C11A58572F138A94004EE344 /* CameraTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582C2F138A94004EE344 /* CameraTabView.swift */; };
+		C11A58582F138A94004EE344 /* CameraTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582C2F138A94004EE344 /* CameraTabView.swift */; };
+		C11A58592F138A94004EE344 /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582D2F138A94004EE344 /* LiveCameraView.swift */; };
+		C11A585A2F138A94004EE344 /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582D2F138A94004EE344 /* LiveCameraView.swift */; };
+		C11A585B2F138A94004EE344 /* LiveCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582D2F138A94004EE344 /* LiveCameraView.swift */; };
+		C11A585C2F138A94004EE344 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582E2F138A94004EE344 /* PhotoPickView.swift */; };
+		C11A585D2F138A94004EE344 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582E2F138A94004EE344 /* PhotoPickView.swift */; };
+		C11A585E2F138A94004EE344 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A582E2F138A94004EE344 /* PhotoPickView.swift */; };
+		C11A585F2F138A94004EE344 /* ColorDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58302F138A94004EE344 /* ColorDetailsView.swift */; };
+		C11A58602F138A94004EE344 /* ColorDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58302F138A94004EE344 /* ColorDetailsView.swift */; };
+		C11A58612F138A94004EE344 /* ColorDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58302F138A94004EE344 /* ColorDetailsView.swift */; };
+		C11A58622F138A94004EE344 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58322F138A94004EE344 /* ExploreView.swift */; };
+		C11A58632F138A94004EE344 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58322F138A94004EE344 /* ExploreView.swift */; };
+		C11A58642F138A94004EE344 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58322F138A94004EE344 /* ExploreView.swift */; };
+		C11A58652F138A94004EE344 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58332F138A94004EE344 /* InfoDetailView.swift */; };
+		C11A58662F138A94004EE344 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58332F138A94004EE344 /* InfoDetailView.swift */; };
+		C11A58672F138A94004EE344 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58332F138A94004EE344 /* InfoDetailView.swift */; };
+		C11A58682F138A94004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58342F138A94004EE344 /* LanguageSelectionView.swift */; };
+		C11A58692F138A94004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58342F138A94004EE344 /* LanguageSelectionView.swift */; };
+		C11A586A2F138A94004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58342F138A94004EE344 /* LanguageSelectionView.swift */; };
+		C11A586B2F138A94004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58362F138A94004EE344 /* PaletteDetailView.swift */; };
+		C11A586C2F138A94004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58362F138A94004EE344 /* PaletteDetailView.swift */; };
+		C11A586D2F138A94004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58362F138A94004EE344 /* PaletteDetailView.swift */; };
+		C11A586E2F138A94004EE344 /* PaletteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58372F138A94004EE344 /* PaletteListView.swift */; };
+		C11A586F2F138A94004EE344 /* PaletteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58372F138A94004EE344 /* PaletteListView.swift */; };
+		C11A58702F138A94004EE344 /* PaletteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58372F138A94004EE344 /* PaletteListView.swift */; };
+		C11A58712F138A94004EE344 /* ColorBlindEnhancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58392F138A94004EE344 /* ColorBlindEnhancerView.swift */; };
+		C11A58722F138A94004EE344 /* ColorBlindEnhancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58392F138A94004EE344 /* ColorBlindEnhancerView.swift */; };
+		C11A58732F138A94004EE344 /* ColorBlindEnhancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58392F138A94004EE344 /* ColorBlindEnhancerView.swift */; };
+		C11A58742F138A94004EE344 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583A2F138A94004EE344 /* ColorSliderView.swift */; };
+		C11A58752F138A94004EE344 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583A2F138A94004EE344 /* ColorSliderView.swift */; };
+		C11A58762F138A94004EE344 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583A2F138A94004EE344 /* ColorSliderView.swift */; };
+		C11A58772F138A94004EE344 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583D2F138A94004EE344 /* Palette.swift */; };
+		C11A58782F138A94004EE344 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583D2F138A94004EE344 /* Palette.swift */; };
+		C11A58792F138A94004EE344 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583D2F138A94004EE344 /* Palette.swift */; };
+		C11A587A2F138A94004EE344 /* PickedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583E2F138A94004EE344 /* PickedColor.swift */; };
+		C11A587B2F138A94004EE344 /* PickedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583E2F138A94004EE344 /* PickedColor.swift */; };
+		C11A587C2F138A94004EE344 /* PickedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A583E2F138A94004EE344 /* PickedColor.swift */; };
+		C11A587D2F138A94004EE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A58402F138A94004EE344 /* Preview Assets.xcassets */; };
+		C11A587E2F138A94004EE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A58402F138A94004EE344 /* Preview Assets.xcassets */; };
+		C11A587F2F138A94004EE344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A58402F138A94004EE344 /* Preview Assets.xcassets */; };
+		C11A58802F138A94004EE344 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = C11A58422F138A94004EE344 /* colors.json */; };
+		C11A58812F138A94004EE344 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = C11A58422F138A94004EE344 /* colors.json */; };
+		C11A58822F138A94004EE344 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = C11A58422F138A94004EE344 /* colors.json */; };
+		C11A58832F138A94004EE344 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58442F138A94004EE344 /* AnalyticsTracker.swift */; };
+		C11A58842F138A94004EE344 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58442F138A94004EE344 /* AnalyticsTracker.swift */; };
+		C11A58852F138A94004EE344 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58442F138A94004EE344 /* AnalyticsTracker.swift */; };
+		C11A58862F138A94004EE344 /* ColorDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58452F138A94004EE344 /* ColorDetailsService.swift */; };
+		C11A58872F138A94004EE344 /* ColorDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58452F138A94004EE344 /* ColorDetailsService.swift */; };
+		C11A58882F138A94004EE344 /* ColorDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58452F138A94004EE344 /* ColorDetailsService.swift */; };
+		C11A58892F138A94004EE344 /* ColorNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58462F138A94004EE344 /* ColorNameService.swift */; };
+		C11A588A2F138A94004EE344 /* ColorNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58462F138A94004EE344 /* ColorNameService.swift */; };
+		C11A588B2F138A94004EE344 /* ColorNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58462F138A94004EE344 /* ColorNameService.swift */; };
+		C11A588C2F138A94004EE344 /* InfoContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58472F138A94004EE344 /* InfoContentService.swift */; };
+		C11A588D2F138A94004EE344 /* InfoContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58472F138A94004EE344 /* InfoContentService.swift */; };
+		C11A588E2F138A94004EE344 /* InfoContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58472F138A94004EE344 /* InfoContentService.swift */; };
+		C11A588F2F138A94004EE344 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58482F138A94004EE344 /* PaletteStore.swift */; };
+		C11A58902F138A94004EE344 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58482F138A94004EE344 /* PaletteStore.swift */; };
+		C11A58912F138A94004EE344 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58482F138A94004EE344 /* PaletteStore.swift */; };
+		C11A58922F138A94004EE344 /* RecentPicksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58492F138A94004EE344 /* RecentPicksStore.swift */; };
+		C11A58932F138A94004EE344 /* RecentPicksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58492F138A94004EE344 /* RecentPicksStore.swift */; };
+		C11A58942F138A94004EE344 /* RecentPicksStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58492F138A94004EE344 /* RecentPicksStore.swift */; };
+		C11A58952F138A94004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584A2F138A94004EE344 /* SettingsStore.swift */; };
+		C11A58962F138A94004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584A2F138A94004EE344 /* SettingsStore.swift */; };
+		C11A58972F138A94004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584A2F138A94004EE344 /* SettingsStore.swift */; };
+		C11A58982F138A94004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A584C2F138A94004EE344 /* Assets.xcassets */; };
+		C11A58992F138A94004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A584C2F138A94004EE344 /* Assets.xcassets */; };
+		C11A589A2F138A94004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A584C2F138A94004EE344 /* Assets.xcassets */; };
+		C11A589B2F138A94004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584D2F138A94004EE344 /* colorApp.swift */; };
+		C11A589C2F138A94004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584D2F138A94004EE344 /* colorApp.swift */; };
+		C11A589D2F138A94004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584D2F138A94004EE344 /* colorApp.swift */; };
+		C11A589E2F138A94004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584E2F138A94004EE344 /* ContentView.swift */; };
+		C11A589F2F138A94004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584E2F138A94004EE344 /* ContentView.swift */; };
+		C11A58A02F138A94004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584E2F138A94004EE344 /* ContentView.swift */; };
 		C1E9CB282F1339340033CF58 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E9CB272F1339340033CF58 /* colorApp.swift */; };
 		C1E9CB2A2F1339340033CF58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E9CB292F1339340033CF58 /* ContentView.swift */; };
 		C1E9CB2C2F1339390033CF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E9CB2B2F1339390033CF58 /* Assets.xcassets */; };
@@ -34,6 +196,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C11A57B12F1377AC004EE344 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C11A57B22F1377AC004EE344 /* AppServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		C11A57B42F1377AC004EE344 /* CameraTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTabView.swift; sourceTree = "<group>"; };
+		C11A57B52F1377AC004EE344 /* LiveCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraView.swift; sourceTree = "<group>"; };
+		C11A57B62F1377AC004EE344 /* PhotoPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickView.swift; sourceTree = "<group>"; };
+		C11A57B82F1377AC004EE344 /* ColorDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDetailsView.swift; sourceTree = "<group>"; };
+		C11A57BA2F1377AC004EE344 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		C11A57BB2F1377AC004EE344 /* InfoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
+		C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteDetailView.swift; sourceTree = "<group>"; };
+		C11A57BF2F1377AC004EE344 /* PaletteListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteListView.swift; sourceTree = "<group>"; };
+		C11A57C12F1377AC004EE344 /* ColorBlindEnhancerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlindEnhancerView.swift; sourceTree = "<group>"; };
+		C11A57C22F1377AC004EE344 /* ColorSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
+		C11A57C52F1377AC004EE344 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		C11A57C62F1377AC004EE344 /* PickedColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickedColor.swift; sourceTree = "<group>"; };
+		C11A57C82F1377AC004EE344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C11A57CA2F1377AC004EE344 /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
+		C11A57CC2F1377AC004EE344 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
+		C11A57CD2F1377AC004EE344 /* ColorDetailsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDetailsService.swift; sourceTree = "<group>"; };
+		C11A57CE2F1377AC004EE344 /* ColorNameService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorNameService.swift; sourceTree = "<group>"; };
+		C11A57CF2F1377AC004EE344 /* InfoContentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoContentService.swift; sourceTree = "<group>"; };
+		C11A57D02F1377AC004EE344 /* PaletteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
+		C11A57D12F1377AC004EE344 /* RecentPicksStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPicksStore.swift; sourceTree = "<group>"; };
+		C11A57D22F1377AC004EE344 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		C11A57D42F1377AC004EE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C11A57D52F1377AC004EE344 /* colorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorApp.swift; sourceTree = "<group>"; };
+		C11A57D62F1377AC004EE344 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C11A58292F138A94004EE344 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C11A582A2F138A94004EE344 /* AppServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		C11A582C2F138A94004EE344 /* CameraTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTabView.swift; sourceTree = "<group>"; };
+		C11A582D2F138A94004EE344 /* LiveCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraView.swift; sourceTree = "<group>"; };
+		C11A582E2F138A94004EE344 /* PhotoPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickView.swift; sourceTree = "<group>"; };
+		C11A58302F138A94004EE344 /* ColorDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDetailsView.swift; sourceTree = "<group>"; };
+		C11A58322F138A94004EE344 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		C11A58332F138A94004EE344 /* InfoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
+		C11A58342F138A94004EE344 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		C11A58362F138A94004EE344 /* PaletteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteDetailView.swift; sourceTree = "<group>"; };
+		C11A58372F138A94004EE344 /* PaletteListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteListView.swift; sourceTree = "<group>"; };
+		C11A58392F138A94004EE344 /* ColorBlindEnhancerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlindEnhancerView.swift; sourceTree = "<group>"; };
+		C11A583A2F138A94004EE344 /* ColorSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
+		C11A583D2F138A94004EE344 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		C11A583E2F138A94004EE344 /* PickedColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickedColor.swift; sourceTree = "<group>"; };
+		C11A58402F138A94004EE344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C11A58422F138A94004EE344 /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
+		C11A58442F138A94004EE344 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
+		C11A58452F138A94004EE344 /* ColorDetailsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDetailsService.swift; sourceTree = "<group>"; };
+		C11A58462F138A94004EE344 /* ColorNameService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorNameService.swift; sourceTree = "<group>"; };
+		C11A58472F138A94004EE344 /* InfoContentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoContentService.swift; sourceTree = "<group>"; };
+		C11A58482F138A94004EE344 /* PaletteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
+		C11A58492F138A94004EE344 /* RecentPicksStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPicksStore.swift; sourceTree = "<group>"; };
+		C11A584A2F138A94004EE344 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		C11A584C2F138A94004EE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C11A584D2F138A94004EE344 /* colorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorApp.swift; sourceTree = "<group>"; };
+		C11A584E2F138A94004EE344 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1E9CB242F1339340033CF58 /* color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E9CB272F1339340033CF58 /* colorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorApp.swift; sourceTree = "<group>"; };
 		C1E9CB292F1339340033CF58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +287,250 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C11A57B32F1377AC004EE344 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57B12F1377AC004EE344 /* AppDelegate.swift */,
+				C11A57B22F1377AC004EE344 /* AppServices.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C11A57B72F1377AC004EE344 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57B42F1377AC004EE344 /* CameraTabView.swift */,
+				C11A57B52F1377AC004EE344 /* LiveCameraView.swift */,
+				C11A57B62F1377AC004EE344 /* PhotoPickView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		C11A57B92F1377AC004EE344 /* ColorDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57B82F1377AC004EE344 /* ColorDetailsView.swift */,
+			);
+			path = ColorDetails;
+			sourceTree = "<group>";
+		};
+		C11A57BD2F1377AC004EE344 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57BA2F1377AC004EE344 /* ExploreView.swift */,
+				C11A57BB2F1377AC004EE344 /* InfoDetailView.swift */,
+				C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		C11A57C02F1377AC004EE344 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */,
+				C11A57BF2F1377AC004EE344 /* PaletteListView.swift */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		C11A57C32F1377AC004EE344 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57C12F1377AC004EE344 /* ColorBlindEnhancerView.swift */,
+				C11A57C22F1377AC004EE344 /* ColorSliderView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C11A57C42F1377AC004EE344 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57B72F1377AC004EE344 /* Camera */,
+				C11A57B92F1377AC004EE344 /* ColorDetails */,
+				C11A57BD2F1377AC004EE344 /* Explore */,
+				C11A57C02F1377AC004EE344 /* Palette */,
+				C11A57C32F1377AC004EE344 /* Tools */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C11A57C72F1377AC004EE344 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57C52F1377AC004EE344 /* Palette.swift */,
+				C11A57C62F1377AC004EE344 /* PickedColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C11A57C92F1377AC004EE344 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57C82F1377AC004EE344 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C11A57CB2F1377AC004EE344 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57CA2F1377AC004EE344 /* colors.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C11A57D32F1377AC004EE344 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57CC2F1377AC004EE344 /* AnalyticsTracker.swift */,
+				C11A57CD2F1377AC004EE344 /* ColorDetailsService.swift */,
+				C11A57CE2F1377AC004EE344 /* ColorNameService.swift */,
+				C11A57CF2F1377AC004EE344 /* InfoContentService.swift */,
+				C11A57D02F1377AC004EE344 /* PaletteStore.swift */,
+				C11A57D12F1377AC004EE344 /* RecentPicksStore.swift */,
+				C11A57D22F1377AC004EE344 /* SettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C11A57D72F1377AC004EE344 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				C11A57B32F1377AC004EE344 /* App */,
+				C11A57C42F1377AC004EE344 /* Features */,
+				C11A57C72F1377AC004EE344 /* Models */,
+				C11A57C92F1377AC004EE344 /* Preview Content */,
+				C11A57CB2F1377AC004EE344 /* Resources */,
+				C11A57D32F1377AC004EE344 /* Services */,
+				C11A57D42F1377AC004EE344 /* Assets.xcassets */,
+				C11A57D52F1377AC004EE344 /* colorApp.swift */,
+				C11A57D62F1377AC004EE344 /* ContentView.swift */,
+			);
+			name = color;
+			sourceTree = "<group>";
+		};
+		C11A582B2F138A94004EE344 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58292F138A94004EE344 /* AppDelegate.swift */,
+				C11A582A2F138A94004EE344 /* AppServices.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C11A582F2F138A94004EE344 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C11A582C2F138A94004EE344 /* CameraTabView.swift */,
+				C11A582D2F138A94004EE344 /* LiveCameraView.swift */,
+				C11A582E2F138A94004EE344 /* PhotoPickView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		C11A58312F138A94004EE344 /* ColorDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58302F138A94004EE344 /* ColorDetailsView.swift */,
+			);
+			path = ColorDetails;
+			sourceTree = "<group>";
+		};
+		C11A58352F138A94004EE344 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58322F138A94004EE344 /* ExploreView.swift */,
+				C11A58332F138A94004EE344 /* InfoDetailView.swift */,
+				C11A58342F138A94004EE344 /* LanguageSelectionView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		C11A58382F138A94004EE344 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58362F138A94004EE344 /* PaletteDetailView.swift */,
+				C11A58372F138A94004EE344 /* PaletteListView.swift */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		C11A583B2F138A94004EE344 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58392F138A94004EE344 /* ColorBlindEnhancerView.swift */,
+				C11A583A2F138A94004EE344 /* ColorSliderView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C11A583C2F138A94004EE344 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C11A582F2F138A94004EE344 /* Camera */,
+				C11A58312F138A94004EE344 /* ColorDetails */,
+				C11A58352F138A94004EE344 /* Explore */,
+				C11A58382F138A94004EE344 /* Palette */,
+				C11A583B2F138A94004EE344 /* Tools */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C11A583F2F138A94004EE344 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C11A583D2F138A94004EE344 /* Palette.swift */,
+				C11A583E2F138A94004EE344 /* PickedColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C11A58412F138A94004EE344 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58402F138A94004EE344 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C11A58432F138A94004EE344 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58422F138A94004EE344 /* colors.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C11A584B2F138A94004EE344 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C11A58442F138A94004EE344 /* AnalyticsTracker.swift */,
+				C11A58452F138A94004EE344 /* ColorDetailsService.swift */,
+				C11A58462F138A94004EE344 /* ColorNameService.swift */,
+				C11A58472F138A94004EE344 /* InfoContentService.swift */,
+				C11A58482F138A94004EE344 /* PaletteStore.swift */,
+				C11A58492F138A94004EE344 /* RecentPicksStore.swift */,
+				C11A584A2F138A94004EE344 /* SettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C11A584F2F138A94004EE344 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				C11A582B2F138A94004EE344 /* App */,
+				C11A583C2F138A94004EE344 /* Features */,
+				C11A583F2F138A94004EE344 /* Models */,
+				C11A58412F138A94004EE344 /* Preview Content */,
+				C11A58432F138A94004EE344 /* Resources */,
+				C11A584B2F138A94004EE344 /* Services */,
+				C11A584C2F138A94004EE344 /* Assets.xcassets */,
+				C11A584D2F138A94004EE344 /* colorApp.swift */,
+				C11A584E2F138A94004EE344 /* ContentView.swift */,
+			);
+			name = color;
+			sourceTree = "<group>";
+		};
 		C1E9CB1B2F1339340033CF58 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +556,8 @@
 			children = (
 				C1E9CB272F1339340033CF58 /* colorApp.swift */,
 				C1E9CB292F1339340033CF58 /* ContentView.swift */,
+				C11A57D72F1377AC004EE344 /* color */,
+				C11A584F2F138A94004EE344 /* color */,
 				C1E9CB2B2F1339390033CF58 /* Assets.xcassets */,
 				C1E9CB2D2F1339390033CF58 /* Preview Content */,
 			);
@@ -231,8 +693,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A58802F138A94004EE344 /* colors.json in Resources */,
 				C1E9CB2F2F1339390033CF58 /* Preview Assets.xcassets in Resources */,
+				C11A58082F1377AC004EE344 /* colors.json in Resources */,
+				C11A58052F1377AC004EE344 /* Preview Assets.xcassets in Resources */,
 				C1E9CB2C2F1339390033CF58 /* Assets.xcassets in Resources */,
+				C11A587D2F138A94004EE344 /* Preview Assets.xcassets in Resources */,
+				C11A58982F138A94004EE344 /* Assets.xcassets in Resources */,
+				C11A58202F1377AC004EE344 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +708,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A587E2F138A94004EE344 /* Preview Assets.xcassets in Resources */,
+				C11A58812F138A94004EE344 /* colors.json in Resources */,
+				C11A58062F1377AC004EE344 /* Preview Assets.xcassets in Resources */,
+				C11A58212F1377AC004EE344 /* Assets.xcassets in Resources */,
+				C11A58992F138A94004EE344 /* Assets.xcassets in Resources */,
+				C11A58092F1377AC004EE344 /* colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +721,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A587F2F138A94004EE344 /* Preview Assets.xcassets in Resources */,
+				C11A58822F138A94004EE344 /* colors.json in Resources */,
+				C11A58072F1377AC004EE344 /* Preview Assets.xcassets in Resources */,
+				C11A58222F1377AC004EE344 /* Assets.xcassets in Resources */,
+				C11A589A2F138A94004EE344 /* Assets.xcassets in Resources */,
+				C11A580A2F1377AC004EE344 /* colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +737,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A580E2F1377AC004EE344 /* ColorDetailsService.swift in Sources */,
+				C11A58862F138A94004EE344 /* ColorDetailsService.swift in Sources */,
+				C11A58652F138A94004EE344 /* InfoDetailView.swift in Sources */,
+				C11A58232F1377AC004EE344 /* colorApp.swift in Sources */,
+				C11A57D82F1377AC004EE344 /* AppDelegate.swift in Sources */,
+				C11A57EA2F1377AC004EE344 /* ExploreView.swift in Sources */,
+				C11A58742F138A94004EE344 /* ColorSliderView.swift in Sources */,
+				C11A57F92F1377AC004EE344 /* ColorBlindEnhancerView.swift in Sources */,
+				C11A58772F138A94004EE344 /* Palette.swift in Sources */,
+				C11A58592F138A94004EE344 /* LiveCameraView.swift in Sources */,
+				C11A581D2F1377AC004EE344 /* SettingsStore.swift in Sources */,
+				C11A58022F1377AC004EE344 /* PickedColor.swift in Sources */,
+				C11A581A2F1377AC004EE344 /* RecentPicksStore.swift in Sources */,
+				C11A57E72F1377AC004EE344 /* ColorDetailsView.swift in Sources */,
+				C11A58832F138A94004EE344 /* AnalyticsTracker.swift in Sources */,
+				C11A58532F138A94004EE344 /* AppServices.swift in Sources */,
+				C11A58712F138A94004EE344 /* ColorBlindEnhancerView.swift in Sources */,
+				C11A57DB2F1377AC004EE344 /* AppServices.swift in Sources */,
+				C11A58682F138A94004EE344 /* LanguageSelectionView.swift in Sources */,
+				C11A58262F1377AC004EE344 /* ContentView.swift in Sources */,
+				C11A57FC2F1377AC004EE344 /* ColorSliderView.swift in Sources */,
+				C11A580B2F1377AC004EE344 /* AnalyticsTracker.swift in Sources */,
 				C1E9CB2A2F1339340033CF58 /* ContentView.swift in Sources */,
+				C11A57FF2F1377AC004EE344 /* Palette.swift in Sources */,
+				C11A585F2F138A94004EE344 /* ColorDetailsView.swift in Sources */,
+				C11A58562F138A94004EE344 /* CameraTabView.swift in Sources */,
+				C11A589E2F138A94004EE344 /* ContentView.swift in Sources */,
+				C11A586E2F138A94004EE344 /* PaletteListView.swift in Sources */,
+				C11A587A2F138A94004EE344 /* PickedColor.swift in Sources */,
+				C11A58952F138A94004EE344 /* SettingsStore.swift in Sources */,
+				C11A57ED2F1377AC004EE344 /* InfoDetailView.swift in Sources */,
+				C11A57E42F1377AC004EE344 /* PhotoPickView.swift in Sources */,
+				C11A586B2F138A94004EE344 /* PaletteDetailView.swift in Sources */,
+				C11A58922F138A94004EE344 /* RecentPicksStore.swift in Sources */,
+				C11A57DE2F1377AC004EE344 /* CameraTabView.swift in Sources */,
+				C11A58622F138A94004EE344 /* ExploreView.swift in Sources */,
+				C11A58112F1377AC004EE344 /* ColorNameService.swift in Sources */,
+				C11A58892F138A94004EE344 /* ColorNameService.swift in Sources */,
+				C11A589B2F138A94004EE344 /* colorApp.swift in Sources */,
+				C11A588F2F138A94004EE344 /* PaletteStore.swift in Sources */,
+				C11A588C2F138A94004EE344 /* InfoContentService.swift in Sources */,
 				C1E9CB282F1339340033CF58 /* colorApp.swift in Sources */,
+				C11A57F02F1377AC004EE344 /* LanguageSelectionView.swift in Sources */,
+				C11A58502F138A94004EE344 /* AppDelegate.swift in Sources */,
+				C11A585C2F138A94004EE344 /* PhotoPickView.swift in Sources */,
+				C11A58142F1377AC004EE344 /* InfoContentService.swift in Sources */,
+				C11A57F62F1377AC004EE344 /* PaletteListView.swift in Sources */,
+				C11A58172F1377AC004EE344 /* PaletteStore.swift in Sources */,
+				C11A57E12F1377AC004EE344 /* LiveCameraView.swift in Sources */,
+				C11A57F32F1377AC004EE344 /* PaletteDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +794,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A580C2F1377AC004EE344 /* AnalyticsTracker.swift in Sources */,
+				C11A58272F1377AC004EE344 /* ContentView.swift in Sources */,
+				C11A58872F138A94004EE344 /* ColorDetailsService.swift in Sources */,
+				C11A588D2F138A94004EE344 /* InfoContentService.swift in Sources */,
+				C11A57E22F1377AC004EE344 /* LiveCameraView.swift in Sources */,
+				C11A58932F138A94004EE344 /* RecentPicksStore.swift in Sources */,
+				C11A57E82F1377AC004EE344 /* ColorDetailsView.swift in Sources */,
+				C11A58962F138A94004EE344 /* SettingsStore.swift in Sources */,
+				C11A585D2F138A94004EE344 /* PhotoPickView.swift in Sources */,
+				C11A589F2F138A94004EE344 /* ContentView.swift in Sources */,
+				C11A58722F138A94004EE344 /* ColorBlindEnhancerView.swift in Sources */,
+				C11A58782F138A94004EE344 /* Palette.swift in Sources */,
+				C11A57DC2F1377AC004EE344 /* AppServices.swift in Sources */,
+				C11A586F2F138A94004EE344 /* PaletteListView.swift in Sources */,
+				C11A58632F138A94004EE344 /* ExploreView.swift in Sources */,
+				C11A58602F138A94004EE344 /* ColorDetailsView.swift in Sources */,
+				C11A57F12F1377AC004EE344 /* LanguageSelectionView.swift in Sources */,
+				C11A57DF2F1377AC004EE344 /* CameraTabView.swift in Sources */,
+				C11A57F42F1377AC004EE344 /* PaletteDetailView.swift in Sources */,
+				C11A588A2F138A94004EE344 /* ColorNameService.swift in Sources */,
+				C11A58512F138A94004EE344 /* AppDelegate.swift in Sources */,
+				C11A57F72F1377AC004EE344 /* PaletteListView.swift in Sources */,
+				C11A580F2F1377AC004EE344 /* ColorDetailsService.swift in Sources */,
+				C11A57FD2F1377AC004EE344 /* ColorSliderView.swift in Sources */,
+				C11A57D92F1377AC004EE344 /* AppDelegate.swift in Sources */,
+				C11A58842F138A94004EE344 /* AnalyticsTracker.swift in Sources */,
+				C11A58122F1377AC004EE344 /* ColorNameService.swift in Sources */,
+				C11A57FA2F1377AC004EE344 /* ColorBlindEnhancerView.swift in Sources */,
+				C11A586C2F138A94004EE344 /* PaletteDetailView.swift in Sources */,
+				C11A585A2F138A94004EE344 /* LiveCameraView.swift in Sources */,
+				C11A58182F1377AC004EE344 /* PaletteStore.swift in Sources */,
+				C11A58752F138A94004EE344 /* ColorSliderView.swift in Sources */,
+				C11A57E52F1377AC004EE344 /* PhotoPickView.swift in Sources */,
+				C11A58572F138A94004EE344 /* CameraTabView.swift in Sources */,
+				C11A58902F138A94004EE344 /* PaletteStore.swift in Sources */,
+				C11A587B2F138A94004EE344 /* PickedColor.swift in Sources */,
+				C11A58032F1377AC004EE344 /* PickedColor.swift in Sources */,
+				C11A58152F1377AC004EE344 /* InfoContentService.swift in Sources */,
+				C11A58242F1377AC004EE344 /* colorApp.swift in Sources */,
+				C11A57EE2F1377AC004EE344 /* InfoDetailView.swift in Sources */,
+				C11A58002F1377AC004EE344 /* Palette.swift in Sources */,
+				C11A58662F138A94004EE344 /* InfoDetailView.swift in Sources */,
+				C11A589C2F138A94004EE344 /* colorApp.swift in Sources */,
+				C11A581B2F1377AC004EE344 /* RecentPicksStore.swift in Sources */,
+				C11A58692F138A94004EE344 /* LanguageSelectionView.swift in Sources */,
+				C11A581E2F1377AC004EE344 /* SettingsStore.swift in Sources */,
+				C11A58542F138A94004EE344 /* AppServices.swift in Sources */,
+				C11A57EB2F1377AC004EE344 /* ExploreView.swift in Sources */,
 				C1E9CB392F13393A0033CF58 /* colorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +850,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A58102F1377AC004EE344 /* ColorDetailsService.swift in Sources */,
+				C11A58882F138A94004EE344 /* ColorDetailsService.swift in Sources */,
+				C11A58672F138A94004EE344 /* InfoDetailView.swift in Sources */,
+				C11A58252F1377AC004EE344 /* colorApp.swift in Sources */,
+				C11A57DA2F1377AC004EE344 /* AppDelegate.swift in Sources */,
+				C11A57EC2F1377AC004EE344 /* ExploreView.swift in Sources */,
+				C11A58762F138A94004EE344 /* ColorSliderView.swift in Sources */,
+				C11A57FB2F1377AC004EE344 /* ColorBlindEnhancerView.swift in Sources */,
+				C11A58792F138A94004EE344 /* Palette.swift in Sources */,
+				C11A585B2F138A94004EE344 /* LiveCameraView.swift in Sources */,
+				C11A581F2F1377AC004EE344 /* SettingsStore.swift in Sources */,
+				C11A58042F1377AC004EE344 /* PickedColor.swift in Sources */,
+				C11A581C2F1377AC004EE344 /* RecentPicksStore.swift in Sources */,
+				C11A57E92F1377AC004EE344 /* ColorDetailsView.swift in Sources */,
+				C11A58852F138A94004EE344 /* AnalyticsTracker.swift in Sources */,
+				C11A58552F138A94004EE344 /* AppServices.swift in Sources */,
+				C11A58732F138A94004EE344 /* ColorBlindEnhancerView.swift in Sources */,
+				C11A57DD2F1377AC004EE344 /* AppServices.swift in Sources */,
+				C11A586A2F138A94004EE344 /* LanguageSelectionView.swift in Sources */,
+				C11A58282F1377AC004EE344 /* ContentView.swift in Sources */,
+				C11A57FE2F1377AC004EE344 /* ColorSliderView.swift in Sources */,
+				C11A580D2F1377AC004EE344 /* AnalyticsTracker.swift in Sources */,
 				C1E9CB452F13393A0033CF58 /* colorUITestsLaunchTests.swift in Sources */,
+				C11A58012F1377AC004EE344 /* Palette.swift in Sources */,
+				C11A58612F138A94004EE344 /* ColorDetailsView.swift in Sources */,
+				C11A58582F138A94004EE344 /* CameraTabView.swift in Sources */,
+				C11A58A02F138A94004EE344 /* ContentView.swift in Sources */,
+				C11A58702F138A94004EE344 /* PaletteListView.swift in Sources */,
+				C11A587C2F138A94004EE344 /* PickedColor.swift in Sources */,
+				C11A58972F138A94004EE344 /* SettingsStore.swift in Sources */,
+				C11A57EF2F1377AC004EE344 /* InfoDetailView.swift in Sources */,
+				C11A57E62F1377AC004EE344 /* PhotoPickView.swift in Sources */,
+				C11A586D2F138A94004EE344 /* PaletteDetailView.swift in Sources */,
+				C11A58942F138A94004EE344 /* RecentPicksStore.swift in Sources */,
+				C11A57E02F1377AC004EE344 /* CameraTabView.swift in Sources */,
+				C11A58642F138A94004EE344 /* ExploreView.swift in Sources */,
+				C11A58132F1377AC004EE344 /* ColorNameService.swift in Sources */,
+				C11A588B2F138A94004EE344 /* ColorNameService.swift in Sources */,
+				C11A589D2F138A94004EE344 /* colorApp.swift in Sources */,
+				C11A58912F138A94004EE344 /* PaletteStore.swift in Sources */,
+				C11A588E2F138A94004EE344 /* InfoContentService.swift in Sources */,
 				C1E9CB432F13393A0033CF58 /* colorUITests.swift in Sources */,
+				C11A57F22F1377AC004EE344 /* LanguageSelectionView.swift in Sources */,
+				C11A58522F138A94004EE344 /* AppDelegate.swift in Sources */,
+				C11A585E2F138A94004EE344 /* PhotoPickView.swift in Sources */,
+				C11A58162F1377AC004EE344 /* InfoContentService.swift in Sources */,
+				C11A57F82F1377AC004EE344 /* PaletteListView.swift in Sources */,
+				C11A58192F1377AC004EE344 /* PaletteStore.swift in Sources */,
+				C11A57E32F1377AC004EE344 /* LiveCameraView.swift in Sources */,
+				C11A57F52F1377AC004EE344 /* PaletteDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
