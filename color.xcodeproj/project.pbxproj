@@ -34,9 +34,6 @@
 		C11A57F02F1377AC004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */; };
 		C11A57F12F1377AC004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */; };
 		C11A57F22F1377AC004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */; };
-		C12B10112F20000000AA0101 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10012F20000000AA0001 /* ThemeSelectionView.swift */; };
-		C12B10122F20000000AA0102 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10012F20000000AA0001 /* ThemeSelectionView.swift */; };
-		C12B10132F20000000AA0103 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10012F20000000AA0001 /* ThemeSelectionView.swift */; };
 		C11A57F32F1377AC004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */; };
 		C11A57F42F1377AC004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */; };
 		C11A57F52F1377AC004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */; };
@@ -83,8 +80,6 @@
 		C11A581E2F1377AC004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D22F1377AC004EE344 /* SettingsStore.swift */; };
 		C11A581F2F1377AC004EE344 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D22F1377AC004EE344 /* SettingsStore.swift */; };
 		C11A58202F1377AC004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57D42F1377AC004EE344 /* Assets.xcassets */; };
-		C12B40022F20000000DD0002 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C12B20012F20000000BB0001 /* Settings.bundle */; };
-		C12B40012F20000000DD0001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C12B30012F20000000CC0001 /* Localizable.strings */; };
 		C11A58212F1377AC004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57D42F1377AC004EE344 /* Assets.xcassets */; };
 		C11A58222F1377AC004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A57D42F1377AC004EE344 /* Assets.xcassets */; };
 		C11A58232F1377AC004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A57D52F1377AC004EE344 /* colorApp.swift */; };
@@ -120,9 +115,6 @@
 		C11A58682F138A94004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58342F138A94004EE344 /* LanguageSelectionView.swift */; };
 		C11A58692F138A94004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58342F138A94004EE344 /* LanguageSelectionView.swift */; };
 		C11A586A2F138A94004EE344 /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58342F138A94004EE344 /* LanguageSelectionView.swift */; };
-		C12B10212F20000000AA0201 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10022F20000000AA0002 /* ThemeSelectionView.swift */; };
-		C12B10222F20000000AA0202 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10022F20000000AA0002 /* ThemeSelectionView.swift */; };
-		C12B10232F20000000AA0203 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10022F20000000AA0002 /* ThemeSelectionView.swift */; };
 		C11A586B2F138A94004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58362F138A94004EE344 /* PaletteDetailView.swift */; };
 		C11A586C2F138A94004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58362F138A94004EE344 /* PaletteDetailView.swift */; };
 		C11A586D2F138A94004EE344 /* PaletteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A58362F138A94004EE344 /* PaletteDetailView.swift */; };
@@ -171,13 +163,21 @@
 		C11A58982F138A94004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A584C2F138A94004EE344 /* Assets.xcassets */; };
 		C11A58992F138A94004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A584C2F138A94004EE344 /* Assets.xcassets */; };
 		C11A589A2F138A94004EE344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11A584C2F138A94004EE344 /* Assets.xcassets */; };
-		C12B40032F20000000DD0003 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C12B20022F20000000BB0002 /* Settings.bundle */; };
 		C11A589B2F138A94004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584D2F138A94004EE344 /* colorApp.swift */; };
 		C11A589C2F138A94004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584D2F138A94004EE344 /* colorApp.swift */; };
 		C11A589D2F138A94004EE344 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584D2F138A94004EE344 /* colorApp.swift */; };
 		C11A589E2F138A94004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584E2F138A94004EE344 /* ContentView.swift */; };
 		C11A589F2F138A94004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584E2F138A94004EE344 /* ContentView.swift */; };
 		C11A58A02F138A94004EE344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A584E2F138A94004EE344 /* ContentView.swift */; };
+		C12B10112F20000000AA0101 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10012F20000000AA0001 /* ThemeSelectionView.swift */; };
+		C12B10122F20000000AA0102 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10012F20000000AA0001 /* ThemeSelectionView.swift */; };
+		C12B10132F20000000AA0103 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10012F20000000AA0001 /* ThemeSelectionView.swift */; };
+		C12B10212F20000000AA0201 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10022F20000000AA0002 /* ThemeSelectionView.swift */; };
+		C12B10222F20000000AA0202 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10022F20000000AA0002 /* ThemeSelectionView.swift */; };
+		C12B10232F20000000AA0203 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B10022F20000000AA0002 /* ThemeSelectionView.swift */; };
+		C12B40012F20000000DD0001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C12B30012F20000000CC0001 /* Localizable.strings */; };
+		C12B40022F20000000DD0002 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C12B20012F20000000BB0001 /* Settings.bundle */; };
+		C12B40032F20000000DD0003 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C12B20022F20000000BB0002 /* Settings.bundle */; };
 		C1E9CB282F1339340033CF58 /* colorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E9CB272F1339340033CF58 /* colorApp.swift */; };
 		C1E9CB2A2F1339340033CF58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E9CB292F1339340033CF58 /* ContentView.swift */; };
 		C1E9CB2C2F1339390033CF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E9CB2B2F1339390033CF58 /* Assets.xcassets */; };
@@ -214,7 +214,6 @@
 		C11A57BA2F1377AC004EE344 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		C11A57BB2F1377AC004EE344 /* InfoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
 		C11A57BC2F1377AC004EE344 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
-		C12B10012F20000000AA0001 /* ThemeSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSelectionView.swift; sourceTree = "<group>"; };
 		C11A57BE2F1377AC004EE344 /* PaletteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteDetailView.swift; sourceTree = "<group>"; };
 		C11A57BF2F1377AC004EE344 /* PaletteListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteListView.swift; sourceTree = "<group>"; };
 		C11A57C12F1377AC004EE344 /* ColorBlindEnhancerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlindEnhancerView.swift; sourceTree = "<group>"; };
@@ -231,12 +230,6 @@
 		C11A57D12F1377AC004EE344 /* RecentPicksStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPicksStore.swift; sourceTree = "<group>"; };
 		C11A57D22F1377AC004EE344 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		C11A57D42F1377AC004EE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C12B20012F20000000BB0001 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.plug-in; path = Settings.bundle; sourceTree = "<group>"; };
-		C12B31012F20000000CC0101 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C12B31022F20000000CC0102 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C12B31032F20000000CC0103 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C12B31042F20000000CC0104 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C12B31052F20000000CC0105 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C11A57D52F1377AC004EE344 /* colorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorApp.swift; sourceTree = "<group>"; };
 		C11A57D62F1377AC004EE344 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C11A58292F138A94004EE344 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -248,7 +241,6 @@
 		C11A58322F138A94004EE344 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		C11A58332F138A94004EE344 /* InfoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
 		C11A58342F138A94004EE344 /* LanguageSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
-		C12B10022F20000000AA0002 /* ThemeSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSelectionView.swift; sourceTree = "<group>"; };
 		C11A58362F138A94004EE344 /* PaletteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteDetailView.swift; sourceTree = "<group>"; };
 		C11A58372F138A94004EE344 /* PaletteListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteListView.swift; sourceTree = "<group>"; };
 		C11A58392F138A94004EE344 /* ColorBlindEnhancerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlindEnhancerView.swift; sourceTree = "<group>"; };
@@ -265,9 +257,17 @@
 		C11A58492F138A94004EE344 /* RecentPicksStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPicksStore.swift; sourceTree = "<group>"; };
 		C11A584A2F138A94004EE344 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		C11A584C2F138A94004EE344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C12B20022F20000000BB0002 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.plug-in; path = Settings.bundle; sourceTree = "<group>"; };
 		C11A584D2F138A94004EE344 /* colorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorApp.swift; sourceTree = "<group>"; };
 		C11A584E2F138A94004EE344 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C12B10012F20000000AA0001 /* ThemeSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSelectionView.swift; sourceTree = "<group>"; };
+		C12B10022F20000000AA0002 /* ThemeSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSelectionView.swift; sourceTree = "<group>"; };
+		C12B20012F20000000BB0001 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C12B20022F20000000BB0002 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C12B31012F20000000CC0101 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C12B31022F20000000CC0102 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C12B31032F20000000CC0103 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C12B31042F20000000CC0104 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C12B31052F20000000CC0105 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C1E9CB242F1339340033CF58 /* color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E9CB272F1339340033CF58 /* colorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorApp.swift; sourceTree = "<group>"; };
 		C1E9CB292F1339340033CF58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -279,21 +279,6 @@
 		C1E9CB422F13393A0033CF58 /* colorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorUITests.swift; sourceTree = "<group>"; };
 		C1E9CB442F13393A0033CF58 /* colorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXVariantGroup section */
-		C12B30012F20000000CC0001 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C12B31012F20000000CC0101 /* en */,
-				C12B31022F20000000CC0102 /* es */,
-				C12B31032F20000000CC0103 /* fr */,
-				C12B31042F20000000CC0104 /* ja */,
-				C12B31052F20000000CC0105 /* zh-Hans */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C1E9CB212F1339340033CF58 /* Frameworks */ = {
@@ -409,7 +394,6 @@
 			isa = PBXGroup;
 			children = (
 				C11A57CA2F1377AC004EE344 /* colors.json */,
-				C12B30012F20000000CC0001 /* Localizable.strings */,
 				C12B20012F20000000BB0001 /* Settings.bundle */,
 			);
 			path = Resources;
@@ -714,6 +698,10 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
+				ja,
+				"zh-Hans",
 			);
 			mainGroup = C1E9CB1B2F1339340033CF58;
 			productRefGroup = C1E9CB252F1339340033CF58 /* Products */;
@@ -965,6 +953,21 @@
 			targetProxy = C1E9CB3F2F13393A0033CF58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C12B30012F20000000CC0001 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C12B31012F20000000CC0101 /* en */,
+				C12B31022F20000000CC0102 /* es */,
+				C12B31032F20000000CC0103 /* fr */,
+				C12B31042F20000000CC0104 /* ja */,
+				C12B31052F20000000CC0105 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C1E9CB462F13393A0033CF58 /* Debug */ = {
