@@ -11,11 +11,22 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink("Info") {
-                    InfoDetailView(page: "privacy")
+                Section("Information") {
+                    NavigationLink("Privacy Statement") {
+                        InfoDetailView(page: "privacy")
+                    }
+                    NavigationLink("Usage Guide") {
+                        InfoDetailView(page: "usage")
+                    }
+                    NavigationLink("Copyright Notice") {
+                        InfoDetailView(page: "copyright")
+                    }
                 }
-                NavigationLink("Language") {
-                    LanguageSelectionView()
+
+                Section("Preferences") {
+                    NavigationLink("Language") {
+                        LanguageSelectionView()
+                    }
                 }
             }
             .navigationTitle("Explore")
