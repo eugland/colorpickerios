@@ -35,9 +35,24 @@ final class InfoContentService {
         #if DEBUG
         print("InfoContentService fetching URL: \(url.absoluteString)")
         #endif
-        let (data, _) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await URLSession.shared.data(from: url)
+        #if DEBUG
+        if let httpResponse = response as? HTTPURLResponse {
+            print("InfoContentService response status: \(httpResponse.statusCode)")
+        }
+        #endif
         try data.write(to: cacheURL, options: .atomic)
-        let decoded = try JSONDecoder().decode(InfoContent.self, from: data)
+        let decoded: InfoContent
+        do {
+            decoded = try JSONDecoder().decode(InfoContent.self, from: data)
+        } catch {
+            #if DEBUG
+            let rawBody = String(data: data, encoding: .utf8) ?? "<non-utf8 response>"
+            print("InfoContentService decode error: \(error)")
+            print("InfoContentService raw response: \(rawBody)")
+            #endif
+            throw error
+        }
         #if DEBUG
         let bodyPreview = decoded.body.prefix(160)
         print("InfoContentService response title: \(decoded.title)")
