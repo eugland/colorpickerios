@@ -8,28 +8,163 @@
 import SwiftUI
 
 struct PaletteListView: View {
-    @EnvironmentObject private var paletteStore: PaletteStore
+    private let recentColors = SampleData.recentColors
+    private let savedColors = SampleData.savedColors
+    private let savedPalettes = SampleData.savedPalettes
 
     var body: some View {
         NavigationStack {
             List {
-                ForEach(paletteStore.palettes) { palette in
-                    NavigationLink(palette.name) {
-                        PaletteDetailView(palette: palette)
+                Section("Recent Colors") {
+                    ColorSwatchRow(picks: recentColors)
+                        .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                }
+
+                Section("Saved Colors") {
+                    ColorSwatchRow(picks: savedColors)
+                        .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                }
+
+                Section("Saved Palettes") {
+                    ForEach(savedPalettes) { palette in
+                        NavigationLink {
+                            PaletteDetailView(palette: palette)
+                        } label: {
+                            PaletteRow(palette: palette)
+                        }
                     }
                 }
             }
             .navigationTitle("Palettes")
-            .toolbar {
-                Button("Add") {
-                    paletteStore.createPalette(named: "New Palette")
+        }
+    }
+}
+
+private struct ColorSwatchRow: View {
+    let picks: [PickedColor]
+
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 12) {
+                ForEach(picks) { pick in
+                    VStack(alignment: .leading, spacing: 6) {
+                        Circle()
+                            .fill(Color.fromARGB(pick.argb))
+                            .frame(width: 44, height: 44)
+                            .overlay(
+                                Circle().stroke(Color.black.opacity(0.08), lineWidth: 1)
+                            )
+                        Text(pick.name)
+                            .font(.footnote)
+                            .foregroundStyle(.primary)
+                        Text(hexString(pick.argb))
+                            .font(.caption2)
+                            .foregroundStyle(.secondary)
+                    }
+                    .frame(width: 88, alignment: .leading)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 4)
+        }
+    }
+}
+
+private struct PaletteRow: View {
+    let palette: Palette
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(palette.name)
+                .font(.headline)
+            if !palette.tags.isEmpty {
+                Text(palette.tags.joined(separator: " • "))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            HStack(spacing: 8) {
+                ForEach(palette.colors.prefix(6)) { color in
+                    Circle()
+                        .fill(Color.fromARGB(color.argb))
+                        .frame(width: 22, height: 22)
+                        .overlay(
+                            Circle().stroke(Color.black.opacity(0.08), lineWidth: 1)
+                        )
                 }
             }
         }
+        .padding(.vertical, 4)
+    }
+}
+
+private enum SampleData {
+    static let recentColors: [PickedColor] = [
+        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
+        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
+        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
+        PickedColor(argb: 0xFF5567FF, name: "Periwinkle")
+    ]
+
+    static let savedColors: [PickedColor] = [
+        PickedColor(argb: 0xFF1A535C, name: "Deep Teal"),
+        PickedColor(argb: 0xFF9B5DE5, name: "Violet"),
+        PickedColor(argb: 0xFF00BBF9, name: "Sky Burst"),
+        PickedColor(argb: 0xFF00F5D4, name: "Mint")
+    ]
+
+    static let savedPalettes: [Palette] = [
+        Palette(
+            name: "Summer Market",
+            colors: [
+                PickedColor(argb: 0xFFFF9F1C, name: "Mango"),
+                PickedColor(argb: 0xFFFFBF69, name: "Apricot"),
+                PickedColor(argb: 0xFFCBF3F0, name: "Sea Mist"),
+                PickedColor(argb: 0xFF2EC4B6, name: "Lagoon"),
+                PickedColor(argb: 0xFFEF476F, name: "Watermelon")
+            ],
+            tags: ["warm", "vibrant"],
+            note: "Pop color accents for retail displays"
+        ),
+        Palette(
+            name: "Night Drive",
+            colors: [
+                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
+                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
+                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
+                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
+                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+            ],
+            tags: ["cool", "moody"],
+            note: "Muted lights for dashboards"
+        ),
+        Palette(
+            name: "Studio Pastels",
+            colors: [
+                PickedColor(argb: 0xFFFFD6E0, name: "Blush"),
+                PickedColor(argb: 0xFFFEE440, name: "Butter"),
+                PickedColor(argb: 0xFFB8F2E6, name: "Mint Cream"),
+                PickedColor(argb: 0xFFA9DEF9, name: "Baby Blue")
+            ],
+            tags: ["soft", "editorial"],
+            note: "Backgrounds for editorial layouts"
+        )
+    ]
+}
+
+private func hexString(_ argb: Int) -> String {
+    String(format: "#%08X", argb)
+}
+
+private extension Color {
+    static func fromARGB(_ argb: Int) -> Color {
+        let alpha = Double((argb >> 24) & 0xFF) / 255.0
+        let red = Double((argb >> 16) & 0xFF) / 255.0
+        let green = Double((argb >> 8) & 0xFF) / 255.0
+        let blue = Double(argb & 0xFF) / 255.0
+        return Color(.sRGB, red: red, green: green, blue: blue, opacity: alpha)
     }
 }
 
 #Preview {
     PaletteListView()
-        .environmentObject(PaletteStore())
 }
