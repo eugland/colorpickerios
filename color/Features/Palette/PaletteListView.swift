@@ -54,13 +54,13 @@ private struct ColorSwatchGrid: View {
                     Circle()
                         .fill(Color.fromARGB(pick.argb))
                         .frame(width: 44, height: 44)
-                        .overlay(
-                            Circle().stroke(Color.black.opacity(0.08), lineWidth: 1)
-                        )
-                    Text(pick.name)
-                        .font(.footnote)
-                        .foregroundStyle(.primary)
-                        .lineLimit(1)
+                .overlay(
+                    Circle().stroke(Color.black.opacity(0.08), lineWidth: 1)
+                )
+            Text(String(localized: String.LocalizationValue(pick.name)))
+                .font(.footnote)
+                .foregroundStyle(.primary)
+                .lineLimit(1)
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -75,10 +75,12 @@ private struct PaletteRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(palette.name)
+            Text(String(localized: String.LocalizationValue(palette.name)))
                 .font(.headline)
             if !palette.tags.isEmpty {
-                Text(palette.tags.joined(separator: " • "))
+                let tagText = palette.tags.map { String(localized: String.LocalizationValue($0)) }
+                    .joined(separator: " • ")
+                Text(tagText)
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

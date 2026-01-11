@@ -13,9 +13,12 @@ struct LanguageSelectionView: View {
     var body: some View {
         Form {
             Picker("Language", selection: $settingsStore.languageTag) {
+                Text("System").tag("system")
                 Text("English").tag("en")
                 Text("Spanish").tag("es")
                 Text("French").tag("fr")
+                Text("Japanese").tag("ja")
+                Text("Chinese").tag("zh-Hans")
             }
         }
         .navigationTitle("Language")

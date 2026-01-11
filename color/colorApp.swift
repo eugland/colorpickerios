@@ -11,6 +11,8 @@ import SwiftUI
 struct colorApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     private let services = AppServices.shared
+    @AppStorage("languageTag") private var languageTag: String = "system"
+    @AppStorage("themeMode") private var themeMode: String = "system"
 
     var body: some Scene {
         WindowGroup {
@@ -18,7 +20,23 @@ struct colorApp: App {
                 .environmentObject(services.settingsStore)
                 .environmentObject(services.paletteStore)
                 .environmentObject(services.recentPicksStore)
-                .environment(\.locale, Locale(identifier: services.settingsStore.languageTag))
+                .environment(\.locale, resolvedLocale)
+                .preferredColorScheme(preferredColorScheme)
+        }
+    }
+
+    private var resolvedLocale: Locale {
+        languageTag == "system" ? .current : Locale(identifier: languageTag)
+    }
+
+    private var preferredColorScheme: ColorScheme? {
+        switch themeMode {
+        case "light":
+            return .light
+        case "dark":
+            return .dark
+        default:
+            return nil
         }
     }
 }

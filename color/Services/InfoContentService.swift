@@ -90,12 +90,12 @@ final class InfoContentService {
         switch page {
         case "privacy":
             return InfoContent(
-                title: "Privacy Statement",
+                title: String(localized: "Privacy Statement"),
                 sections: [
                     Section(
-                        heading: "Offline notice",
+                        heading: String(localized: "Offline notice"),
                         paragraphs: [
-                            "We couldn’t reach the privacy statement right now. Please check your internet connection and try again."
+                            String(localized: "We couldn’t reach the privacy statement right now. Please check your internet connection and try again.")
                         ],
                         bullets: []
                     )
@@ -103,12 +103,12 @@ final class InfoContentService {
             )
         case "usage":
             return InfoContent(
-                title: "Usage Guide",
+                title: String(localized: "Usage Guide"),
                 sections: [
                     Section(
-                        heading: "Offline notice",
+                        heading: String(localized: "Offline notice"),
                         paragraphs: [
-                            "We couldn’t load the usage guide right now. Please reconnect to the internet to view the latest version."
+                            String(localized: "We couldn’t load the usage guide right now. Please reconnect to the internet to view the latest version.")
                         ],
                         bullets: []
                     )
@@ -116,12 +116,12 @@ final class InfoContentService {
             )
         case "copyright":
             return InfoContent(
-                title: "Copyright Notice",
+                title: String(localized: "Copyright Notice"),
                 sections: [
                     Section(
-                        heading: "Offline notice",
+                        heading: String(localized: "Offline notice"),
                         paragraphs: [
-                            "We couldn’t load the copyright notice right now. Please check your connection and try again."
+                            String(localized: "We couldn’t load the copyright notice right now. Please check your connection and try again.")
                         ],
                         bullets: []
                     )

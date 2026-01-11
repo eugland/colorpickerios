@@ -20,7 +20,7 @@ struct ColorSliderView: View {
             }
             .pickerStyle(.segmented)
 
-            Text("Sliders for \(mode) values will appear here.")
+            Text(String(format: String(localized: "Sliders for %@ values will appear here."), mode))
                 .foregroundStyle(.secondary)
         }
         .navigationTitle("Color Slider")
