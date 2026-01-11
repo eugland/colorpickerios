@@ -25,13 +25,25 @@ final class InfoContentService {
     func loadPage(_ page: String, languageTag: String) async throws -> InfoContent {
         let cacheURL = cacheDirectory.appendingPathComponent("info-\(page)-\(languageTag).json")
         if let cached = try? loadCached(from: cacheURL), !cached.isExpired(ttl: ttl) {
+            #if DEBUG
+            print("InfoContentService cache hit for \(cacheURL.lastPathComponent)")
+            #endif
             return cached.content
         }
         let url = URL(string: "https://eugland.github.io/color-picker-pages/\(page)/\(languageTag).json")
         guard let url else { throw URLError(.badURL) }
+        #if DEBUG
+        print("InfoContentService fetching URL: \(url.absoluteString)")
+        #endif
         let (data, _) = try await URLSession.shared.data(from: url)
         try data.write(to: cacheURL, options: .atomic)
-        return try JSONDecoder().decode(InfoContent.self, from: data)
+        let decoded = try JSONDecoder().decode(InfoContent.self, from: data)
+        #if DEBUG
+        let bodyPreview = decoded.body.prefix(160)
+        print("InfoContentService response title: \(decoded.title)")
+        print("InfoContentService response body preview: \(bodyPreview)")
+        #endif
+        return decoded
     }
 
     private func loadCached(from url: URL) throws -> CachedContent? {
