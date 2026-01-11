@@ -16,12 +16,12 @@ struct PaletteListView: View {
         NavigationStack {
             List {
                 Section("Recent Colors") {
-                    ColorSwatchRow(picks: recentColors)
+                    ColorSwatchGrid(picks: recentColors)
                         .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                 }
 
                 Section("Saved Colors") {
-                    ColorSwatchRow(picks: savedColors)
+                    ColorSwatchGrid(picks: savedColors)
                         .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                 }
 
@@ -40,33 +40,36 @@ struct PaletteListView: View {
     }
 }
 
-private struct ColorSwatchRow: View {
+private struct ColorSwatchGrid: View {
     let picks: [PickedColor]
 
+    private let columns = [
+        GridItem(.adaptive(minimum: 80), spacing: 12)
+    ]
+
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
-                ForEach(picks) { pick in
-                    VStack(alignment: .leading, spacing: 6) {
-                        Circle()
-                            .fill(Color.fromARGB(pick.argb))
-                            .frame(width: 44, height: 44)
-                            .overlay(
-                                Circle().stroke(Color.black.opacity(0.08), lineWidth: 1)
-                            )
-                        Text(pick.name)
-                            .font(.footnote)
-                            .foregroundStyle(.primary)
-                        Text(hexString(pick.argb))
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
-                    }
-                    .frame(width: 88, alignment: .leading)
+        LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
+            ForEach(picks) { pick in
+                VStack(spacing: 6) {
+                    Circle()
+                        .fill(Color.fromARGB(pick.argb))
+                        .frame(width: 44, height: 44)
+                        .overlay(
+                            Circle().stroke(Color.black.opacity(0.08), lineWidth: 1)
+                        )
+                    Text(pick.name)
+                        .font(.footnote)
+                        .foregroundStyle(.primary)
+                        .lineLimit(1)
+                    Text(hexString(pick.argb))
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
                 }
+                .frame(maxWidth: .infinity)
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 4)
         }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 4)
     }
 }
 
