@@ -18,9 +18,10 @@
             <key>Key</key>
             <string>languageTag</string>
             <key>DefaultValue</key>
-            <string>en</string>
+            <string>system</string>
             <key>Values</key>
             <array>
+                <string>system</string>
                 <string>en</string>
                 <string>es</string>
                 <string>fr</string>
@@ -29,6 +30,7 @@
             </array>
             <key>Titles</key>
             <array>
+                <string>System</string>
                 <string>English</string>
                 <string>Spanish</string>
                 <string>French</string>

@@ -53,7 +53,7 @@ struct InfoDetailView: View {
             .padding()
         }
         .navigationTitle(content?.title ?? pageTitle)
-        .task(id: "\(page)-\(settingsStore.languageTag)") {
+        .task(id: "\(page)-\(settingsStore.resolvedLanguageTag)") {
             await loadContent()
         }
     }
@@ -77,7 +77,7 @@ struct InfoDetailView: View {
         do {
             content = try await AppServices.shared.infoContentService.loadPage(
                 page,
-                languageTag: settingsStore.languageTag
+                languageTag: settingsStore.resolvedLanguageTag
             )
         } catch {
             loadError = String(localized: "Unable to load this page right now. Please try again later.")

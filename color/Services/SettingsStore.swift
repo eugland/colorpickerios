@@ -14,7 +14,7 @@ final class SettingsStore: ObservableObject {
     @AppStorage("crosshairStyle") var crosshairStyle: String = "circle"
     @AppStorage("crosshairSize") var crosshairSize: Double = 24
     @AppStorage("pickerSensitivity") var pickerSensitivity: Double = 1
-    @AppStorage("languageTag") var languageTag: String = "en"
+    @AppStorage("languageTag") var languageTag: String = "system"
 
     var preferredColorScheme: ColorScheme? {
         switch themeMode {
@@ -25,5 +25,27 @@ final class SettingsStore: ObservableObject {
         default:
             return nil
         }
+    }
+
+    var resolvedLanguageTag: String {
+        if languageTag == "system" {
+            return SettingsStore.systemLanguageTag()
+        }
+        return languageTag
+    }
+
+    var resolvedLocale: Locale {
+        if languageTag == "system" {
+            return .current
+        }
+        return Locale(identifier: languageTag)
+    }
+
+    private static func systemLanguageTag() -> String {
+        let identifier = Locale.current.identifier
+        if identifier.hasPrefix("zh") {
+            return "zh-Hans"
+        }
+        return Locale.current.language.languageCode?.identifier ?? "en"
     }
 }
