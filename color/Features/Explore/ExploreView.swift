@@ -27,6 +27,9 @@ struct ExploreView: View {
                     NavigationLink("Language") {
                         LanguageSelectionView()
                     }
+                    NavigationLink("Theme") {
+                        ThemeSelectionView()
+                    }
                 }
             }
             .navigationTitle("Explore")

@@ -13,9 +13,11 @@ struct ColorDetailsView: View {
     var body: some View {
         Form {
             Section("Color") {
-                Text(details.name ?? "Unknown")
+                Text(details.name ?? String(localized: "Unknown"))
                 Text(details.hex)
-                Text("Luminance: \(details.luminance, format: .number.precision(.fractionLength(2)))")
+                LabeledContent("Luminance") {
+                    Text(details.luminance, format: .number.precision(.fractionLength(2)))
+                }
             }
         }
         .navigationTitle("Color Details")

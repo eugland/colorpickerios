@@ -99,117 +99,121 @@ private struct PaletteRow: View {
 
 private enum SampleData {
     static let recentColors: [PickedColor] = [
-        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
-        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
-        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
-        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
-        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
-        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
-        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
-        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
-        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
-        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
-        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
-        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
-        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
-        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
-        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
-        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
+        PickedColor(argb: 0xFFFF6B6B, name: localized("Coral")),
+        PickedColor(argb: 0xFFFFC857, name: localized("Marigold")),
+        PickedColor(argb: 0xFF4ECDC4, name: localized("Lagoon")),
+        PickedColor(argb: 0xFF5567FF, name: localized("Periwinkle")),
+        PickedColor(argb: 0xFFFF6B6B, name: localized("Coral")),
+        PickedColor(argb: 0xFFFFC857, name: localized("Marigold")),
+        PickedColor(argb: 0xFF4ECDC4, name: localized("Lagoon")),
+        PickedColor(argb: 0xFF5567FF, name: localized("Periwinkle")),
+        PickedColor(argb: 0xFFFF6B6B, name: localized("Coral")),
+        PickedColor(argb: 0xFFFFC857, name: localized("Marigold")),
+        PickedColor(argb: 0xFF4ECDC4, name: localized("Lagoon")),
+        PickedColor(argb: 0xFF5567FF, name: localized("Periwinkle")),
+        PickedColor(argb: 0xFFFF6B6B, name: localized("Coral")),
+        PickedColor(argb: 0xFFFFC857, name: localized("Marigold")),
+        PickedColor(argb: 0xFF4ECDC4, name: localized("Lagoon")),
+        PickedColor(argb: 0xFF5567FF, name: localized("Periwinkle")),
         
     ]
 
     static let savedColors: [PickedColor] = [
-        PickedColor(argb: 0xFF1A535C, name: "Deep Teal"),
-        PickedColor(argb: 0xFF9B5DE5, name: "Violet"),
-        PickedColor(argb: 0xFF00BBF9, name: "Sky Burst"),
-        PickedColor(argb: 0xFF00F5D4, name: "Mint")
+        PickedColor(argb: 0xFF1A535C, name: localized("Deep Teal")),
+        PickedColor(argb: 0xFF9B5DE5, name: localized("Violet")),
+        PickedColor(argb: 0xFF00BBF9, name: localized("Sky Burst")),
+        PickedColor(argb: 0xFF00F5D4, name: localized("Mint"))
     ]
 
     static let savedPalettes: [Palette] = [
         Palette(
-            name: "Summer Market",
+            name: localized("Summer Market"),
             colors: [
-                PickedColor(argb: 0xFFFF9F1C, name: "Mango"),
-                PickedColor(argb: 0xFFFFBF69, name: "Apricot"),
-                PickedColor(argb: 0xFFCBF3F0, name: "Sea Mist"),
-                PickedColor(argb: 0xFF2EC4B6, name: "Lagoon"),
-                PickedColor(argb: 0xFFEF476F, name: "Watermelon")
+                PickedColor(argb: 0xFFFF9F1C, name: localized("Mango")),
+                PickedColor(argb: 0xFFFFBF69, name: localized("Apricot")),
+                PickedColor(argb: 0xFFCBF3F0, name: localized("Sea Mist")),
+                PickedColor(argb: 0xFF2EC4B6, name: localized("Lagoon")),
+                PickedColor(argb: 0xFFEF476F, name: localized("Watermelon"))
             ],
-            tags: ["warm", "vibrant"],
-            note: "Pop color accents for retail displays"
+            tags: [localized("warm"), localized("vibrant")],
+            note: localized("Pop color accents for retail displays")
         ),
         Palette(
-            name: "Night Drive",
+            name: localized("Night Drive"),
             colors: [
-                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
-                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
-                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
-                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
-                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+                PickedColor(argb: 0xFF1B1F3B, name: localized("Midnight")),
+                PickedColor(argb: 0xFF7E7F9A, name: localized("Steel")),
+                PickedColor(argb: 0xFFD4D6F6, name: localized("Fog")),
+                PickedColor(argb: 0xFF3D5A80, name: localized("Indigo")),
+                PickedColor(argb: 0xFF98C1D9, name: localized("Frost"))
             ],
-            tags: ["cool", "moody"],
-            note: "Muted lights for dashboards"
+            tags: [localized("cool"), localized("moody")],
+            note: localized("Muted lights for dashboards")
         ),
         Palette(
-            name: "Night Drive",
+            name: localized("Night Drive"),
             colors: [
-                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
-                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
-                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
-                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
-                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+                PickedColor(argb: 0xFF1B1F3B, name: localized("Midnight")),
+                PickedColor(argb: 0xFF7E7F9A, name: localized("Steel")),
+                PickedColor(argb: 0xFFD4D6F6, name: localized("Fog")),
+                PickedColor(argb: 0xFF3D5A80, name: localized("Indigo")),
+                PickedColor(argb: 0xFF98C1D9, name: localized("Frost"))
             ],
-            tags: ["cool", "moody"],
-            note: "Muted lights for dashboards"
+            tags: [localized("cool"), localized("moody")],
+            note: localized("Muted lights for dashboards")
         ),
         Palette(
-            name: "Night Drive",
+            name: localized("Night Drive"),
             colors: [
-                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
-                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
-                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
-                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
-                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+                PickedColor(argb: 0xFF1B1F3B, name: localized("Midnight")),
+                PickedColor(argb: 0xFF7E7F9A, name: localized("Steel")),
+                PickedColor(argb: 0xFFD4D6F6, name: localized("Fog")),
+                PickedColor(argb: 0xFF3D5A80, name: localized("Indigo")),
+                PickedColor(argb: 0xFF98C1D9, name: localized("Frost"))
             ],
-            tags: ["cool", "moody"],
-            note: "Muted lights for dashboards"
+            tags: [localized("cool"), localized("moody")],
+            note: localized("Muted lights for dashboards")
         ),
         Palette(
-            name: "Night Drive",
+            name: localized("Night Drive"),
             colors: [
-                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
-                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
-                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
-                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
-                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+                PickedColor(argb: 0xFF1B1F3B, name: localized("Midnight")),
+                PickedColor(argb: 0xFF7E7F9A, name: localized("Steel")),
+                PickedColor(argb: 0xFFD4D6F6, name: localized("Fog")),
+                PickedColor(argb: 0xFF3D5A80, name: localized("Indigo")),
+                PickedColor(argb: 0xFF98C1D9, name: localized("Frost"))
             ],
-            tags: ["cool", "moody"],
-            note: "Muted lights for dashboards"
+            tags: [localized("cool"), localized("moody")],
+            note: localized("Muted lights for dashboards")
         ),
         Palette(
-            name: "Night Drive",
+            name: localized("Night Drive"),
             colors: [
-                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
-                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
-                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
-                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
-                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+                PickedColor(argb: 0xFF1B1F3B, name: localized("Midnight")),
+                PickedColor(argb: 0xFF7E7F9A, name: localized("Steel")),
+                PickedColor(argb: 0xFFD4D6F6, name: localized("Fog")),
+                PickedColor(argb: 0xFF3D5A80, name: localized("Indigo")),
+                PickedColor(argb: 0xFF98C1D9, name: localized("Frost"))
             ],
-            tags: ["cool", "moody"],
-            note: "Muted lights for dashboards"
+            tags: [localized("cool"), localized("moody")],
+            note: localized("Muted lights for dashboards")
         ),
         Palette(
-            name: "Studio Pastels",
+            name: localized("Studio Pastels"),
             colors: [
-                PickedColor(argb: 0xFFFFD6E0, name: "Blush"),
-                PickedColor(argb: 0xFFFEE440, name: "Butter"),
-                PickedColor(argb: 0xFFB8F2E6, name: "Mint Cream"),
-                PickedColor(argb: 0xFFA9DEF9, name: "Baby Blue")
+                PickedColor(argb: 0xFFFFD6E0, name: localized("Blush")),
+                PickedColor(argb: 0xFFFEE440, name: localized("Butter")),
+                PickedColor(argb: 0xFFB8F2E6, name: localized("Mint Cream")),
+                PickedColor(argb: 0xFFA9DEF9, name: localized("Baby Blue"))
             ],
-            tags: ["soft", "editorial"],
-            note: "Backgrounds for editorial layouts"
+            tags: [localized("soft"), localized("editorial")],
+            note: localized("Backgrounds for editorial layouts")
         )
     ]
+}
+
+private func localized(_ key: String) -> String {
+    String(localized: String.LocalizationValue(key))
 }
 
 private func hexString(_ argb: Int) -> String {

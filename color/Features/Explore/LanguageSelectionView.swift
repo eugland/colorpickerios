@@ -16,6 +16,8 @@ struct LanguageSelectionView: View {
                 Text("English").tag("en")
                 Text("Spanish").tag("es")
                 Text("French").tag("fr")
+                Text("Japanese").tag("ja")
+                Text("Chinese").tag("zh-Hans")
             }
         }
         .navigationTitle("Language")

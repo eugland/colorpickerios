@@ -15,4 +15,15 @@ final class SettingsStore: ObservableObject {
     @AppStorage("crosshairSize") var crosshairSize: Double = 24
     @AppStorage("pickerSensitivity") var pickerSensitivity: Double = 1
     @AppStorage("languageTag") var languageTag: String = "en"
+
+    var preferredColorScheme: ColorScheme? {
+        switch themeMode {
+        case "light":
+            return .light
+        case "dark":
+            return .dark
+        default:
+            return nil
+        }
+    }
 }

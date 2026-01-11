@@ -19,6 +19,7 @@ struct colorApp: App {
                 .environmentObject(services.paletteStore)
                 .environmentObject(services.recentPicksStore)
                 .environment(\.locale, Locale(identifier: services.settingsStore.languageTag))
+                .preferredColorScheme(services.settingsStore.preferredColorScheme)
         }
     }
 }
