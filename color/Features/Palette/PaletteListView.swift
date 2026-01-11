@@ -102,7 +102,20 @@ private enum SampleData {
         PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
         PickedColor(argb: 0xFFFFC857, name: "Marigold"),
         PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
-        PickedColor(argb: 0xFF5567FF, name: "Periwinkle")
+        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
+        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
+        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
+        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
+        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
+        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
+        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
+        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
+        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
+        PickedColor(argb: 0xFFFF6B6B, name: "Coral"),
+        PickedColor(argb: 0xFFFFC857, name: "Marigold"),
+        PickedColor(argb: 0xFF4ECDC4, name: "Lagoon"),
+        PickedColor(argb: 0xFF5567FF, name: "Periwinkle"),
+        
     ]
 
     static let savedColors: [PickedColor] = [
@@ -124,6 +137,54 @@ private enum SampleData {
             ],
             tags: ["warm", "vibrant"],
             note: "Pop color accents for retail displays"
+        ),
+        Palette(
+            name: "Night Drive",
+            colors: [
+                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
+                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
+                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
+                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
+                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+            ],
+            tags: ["cool", "moody"],
+            note: "Muted lights for dashboards"
+        ),
+        Palette(
+            name: "Night Drive",
+            colors: [
+                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
+                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
+                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
+                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
+                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+            ],
+            tags: ["cool", "moody"],
+            note: "Muted lights for dashboards"
+        ),
+        Palette(
+            name: "Night Drive",
+            colors: [
+                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
+                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
+                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
+                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
+                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+            ],
+            tags: ["cool", "moody"],
+            note: "Muted lights for dashboards"
+        ),
+        Palette(
+            name: "Night Drive",
+            colors: [
+                PickedColor(argb: 0xFF1B1F3B, name: "Midnight"),
+                PickedColor(argb: 0xFF7E7F9A, name: "Steel"),
+                PickedColor(argb: 0xFFD4D6F6, name: "Fog"),
+                PickedColor(argb: 0xFF3D5A80, name: "Indigo"),
+                PickedColor(argb: 0xFF98C1D9, name: "Frost")
+            ],
+            tags: ["cool", "moody"],
+            note: "Muted lights for dashboards"
         ),
         Palette(
             name: "Night Drive",
