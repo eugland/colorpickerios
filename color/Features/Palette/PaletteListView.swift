@@ -44,13 +44,13 @@ private struct ColorSwatchGrid: View {
     let picks: [PickedColor]
 
     private let columns = [
-        GridItem(.adaptive(minimum: 80), spacing: 12)
+        GridItem(.adaptive(minimum: 72), spacing: 8)
     ]
 
     var body: some View {
-        LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
+        LazyVGrid(columns: columns, alignment: .center, spacing: 8) {
             ForEach(picks) { pick in
-                VStack(spacing: 6) {
+                VStack(spacing: 4) {
                     Circle()
                         .fill(Color.fromARGB(pick.argb))
                         .frame(width: 44, height: 44)
@@ -61,15 +61,12 @@ private struct ColorSwatchGrid: View {
                         .font(.footnote)
                         .foregroundStyle(.primary)
                         .lineLimit(1)
-                    Text(hexString(pick.argb))
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
                 }
                 .frame(maxWidth: .infinity)
             }
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 4)
+        .padding(.horizontal, 8)
+        .padding(.vertical, 6)
     }
 }
 
