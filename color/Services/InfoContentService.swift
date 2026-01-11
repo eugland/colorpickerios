@@ -41,33 +41,95 @@ final class InfoContentService {
         #if DEBUG
         print("InfoContentService fetching URL: \(url.absoluteString)")
         #endif
-        let (data, response) = try await URLSession.shared.data(from: url)
-        #if DEBUG
-        if let httpResponse = response as? HTTPURLResponse {
-            print("InfoContentService response status: \(httpResponse.statusCode)")
-        }
-        #endif
-        try data.write(to: cacheURL, options: .atomic)
-        let decoded: InfoContent
         do {
-            decoded = try JSONDecoder().decode(InfoContent.self, from: data)
-        } catch {
+            let (data, response) = try await URLSession.shared.data(from: url)
             #if DEBUG
-            let rawBody = String(data: data, encoding: .utf8) ?? "<non-utf8 response>"
-            print("InfoContentService decode error: \(error)")
-            print("InfoContentService raw response: \(rawBody)")
+            if let httpResponse = response as? HTTPURLResponse {
+                print("InfoContentService response status: \(httpResponse.statusCode)")
+            }
             #endif
+            try data.write(to: cacheURL, options: .atomic)
+            let decoded: InfoContent
+            do {
+                decoded = try JSONDecoder().decode(InfoContent.self, from: data)
+            } catch {
+                #if DEBUG
+                let rawBody = String(data: data, encoding: .utf8) ?? "<non-utf8 response>"
+                print("InfoContentService decode error: \(error)")
+                print("InfoContentService raw response: \(rawBody)")
+                #endif
+                throw error
+            }
+            #if DEBUG
+            let titlePreview = decoded.title ?? "<none>"
+            let sectionCount = decoded.sections.count
+            let firstParagraph = decoded.sections.first?.paragraphs.first ?? ""
+            print("InfoContentService response title: \(titlePreview)")
+            print("InfoContentService response sections: \(sectionCount)")
+            print("InfoContentService response first paragraph preview: \(firstParagraph.prefix(160))")
+            #endif
+            return decoded
+        } catch {
+            if let cached = try? loadCached(from: cacheURL) {
+                #if DEBUG
+                print("InfoContentService falling back to cached content for \(cacheURL.lastPathComponent)")
+                #endif
+                return cached.content
+            }
+            if let fallback = fallbackContent(for: page) {
+                #if DEBUG
+                print("InfoContentService falling back to bundled default content for page \(page)")
+                #endif
+                return fallback
+            }
             throw error
         }
-        #if DEBUG
-        let titlePreview = decoded.title ?? "<none>"
-        let sectionCount = decoded.sections.count
-        let firstParagraph = decoded.sections.first?.paragraphs.first ?? ""
-        print("InfoContentService response title: \(titlePreview)")
-        print("InfoContentService response sections: \(sectionCount)")
-        print("InfoContentService response first paragraph preview: \(firstParagraph.prefix(160))")
-        #endif
-        return decoded
+    }
+
+    private func fallbackContent(for page: String) -> InfoContent? {
+        switch page {
+        case "privacy":
+            return InfoContent(
+                title: "Privacy Statement",
+                sections: [
+                    Section(
+                        heading: "Offline notice",
+                        paragraphs: [
+                            "We couldn’t reach the privacy statement right now. Please check your internet connection and try again."
+                        ],
+                        bullets: []
+                    )
+                ]
+            )
+        case "usage":
+            return InfoContent(
+                title: "Usage Guide",
+                sections: [
+                    Section(
+                        heading: "Offline notice",
+                        paragraphs: [
+                            "We couldn’t load the usage guide right now. Please reconnect to the internet to view the latest version."
+                        ],
+                        bullets: []
+                    )
+                ]
+            )
+        case "copyright":
+            return InfoContent(
+                title: "Copyright Notice",
+                sections: [
+                    Section(
+                        heading: "Offline notice",
+                        paragraphs: [
+                            "We couldn’t load the copyright notice right now. Please check your connection and try again."
+                        ],
+                        bullets: []
+                    )
+                ]
+            )
+        default:
+            return nil
+        }
     }
 
     private func loadCached(from url: URL) throws -> CachedContent? {
