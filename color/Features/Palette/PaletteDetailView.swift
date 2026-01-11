@@ -48,7 +48,7 @@ private struct PaletteColorRow: View {
     var body: some View {
         HStack(spacing: 12) {
             Circle()
-                .fill(Color.fromARGB(color.argb))
+                .fill(colorFromARGB(color.argb))
                 .frame(width: 32, height: 32)
                 .overlay(Circle().stroke(Color.black.opacity(0.08), lineWidth: 1))
 
@@ -63,4 +63,12 @@ private struct PaletteColorRow: View {
         }
         .padding(.vertical, 4)
     }
+}
+
+private func colorFromARGB(_ argb: Int) -> Color {
+    let alpha = Double((argb >> 24) & 0xFF) / 255.0
+    let red = Double((argb >> 16) & 0xFF) / 255.0
+    let green = Double((argb >> 8) & 0xFF) / 255.0
+    let blue = Double(argb & 0xFF) / 255.0
+    return Color(.sRGB, red: red, green: green, blue: blue, opacity: alpha)
 }

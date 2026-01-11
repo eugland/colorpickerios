@@ -24,7 +24,7 @@ struct ColorDetailsView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 RoundedRectangle(cornerRadius: 24)
-                    .fill(Color.fromARGB(details.argb))
+                    .fill(colorFromARGB(details.argb))
                     .frame(height: 160)
                     .shadow(color: .black.opacity(0.08), radius: 8, x: 0, y: 4)
 
@@ -57,7 +57,7 @@ struct ColorDetailsView: View {
     private var headerSection: some View {
         HStack(spacing: 12) {
             Circle()
-                .fill(Color.fromARGB(details.argb))
+                .fill(colorFromARGB(details.argb))
                 .frame(width: 64, height: 64)
                 .overlay(Circle().stroke(Color.black.opacity(0.08), lineWidth: 1))
 
@@ -146,7 +146,7 @@ struct ColorDetailsView: View {
                     } label: {
                         VStack(spacing: 6) {
                             Circle()
-                                .fill(Color.fromARGB(color.argb))
+                                .fill(colorFromARGB(color.argb))
                                 .frame(width: 44, height: 44)
                                 .overlay(Circle().stroke(Color.black.opacity(0.08), lineWidth: 1))
                             Text(color.name)
@@ -199,7 +199,7 @@ private struct HarmonyRow: View {
                     ForEach(argbs, id: \.self) { argb in
                         HStack(spacing: 8) {
                             Circle()
-                                .fill(Color.fromARGB(argb))
+                                .fill(colorFromARGB(argb))
                                 .frame(width: 28, height: 28)
                                 .overlay(Circle().stroke(Color.black.opacity(0.08), lineWidth: 1))
                             Text(String(format: "#%08X", argb))
@@ -233,4 +233,12 @@ private struct KeyValueRow: View {
         .background(Color(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
+}
+
+private func colorFromARGB(_ argb: Int) -> Color {
+    let alpha = Double((argb >> 24) & 0xFF) / 255.0
+    let red = Double((argb >> 16) & 0xFF) / 255.0
+    let green = Double((argb >> 8) & 0xFF) / 255.0
+    let blue = Double(argb & 0xFF) / 255.0
+    return Color(.sRGB, red: red, green: green, blue: blue, opacity: alpha)
 }
